@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "lockitem",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -50, "left": 100, "attrs": {} },
+    { "type": "wokwi-led", "id": "led", "top": -22.8, "left": -5.8, "attrs": { "color": "red" } },
+    { "type": "chip-gps", "id": "chip1", "top": 87.42, "left": 244.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:21", "led:A", "green", [ "v0" ] ],
+    [ "chip1:GND", "esp:GND.1", "black", [ "h0" ] ],
+    [ "chip1:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "chip1:RX", "esp:TX2", "green", [ "h30.61", "v-48", "h-182.7" ] ],
+    [ "chip1:TX", "esp:RX2", "green", [ "h21.01", "v-44.8" ] ],
+    [ "esp:GND.2", "led:A", "black", [ "h0" ] ],
+    [ "esp:D13", "led:C", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

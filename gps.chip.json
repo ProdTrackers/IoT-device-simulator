@@ -1,0 +1,11 @@
+{
+  "name": "gps-neo6m",
+  "author": "Eduardo Chero",
+  "pins": [
+    "GND",
+    "VCC",
+    "TX",
+    "RX"
+  ],
+  "controls": []
+}
